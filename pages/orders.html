@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../src/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-body text-dark-gray">
+    <header class="flex flex-col font-display">
+      <div
+        class="flex items-center justify-between w-full max-w-[1120px] mx-auto px-8 py-4"
+      >
+        <!-- mobile menu -->
+        <div class="flex items-center gap-5">
+          <input
+            type="checkbox"
+            class="checked:translate-x-0 transition-all duration-[0.3s] hidden"
+            id="openMenu"
+          />
+          <label
+            for="openMenu"
+            class="transition-all duration-700 left-0 ease-in-out cursor-pointer z-[99] w-5 h-2 md:hidden"
+          >
+            <div
+              class="transition-all duration-[0.5s] absolute h-[1px] mb-1 w-5 bg-dark-gray diagonal part-1"
+            ></div>
+            <div
+              class="transition-all duration-[0.5s] absolute h-[1px] mt-1 w-5 bg-dark-gray horizontal"
+            ></div>
+            <div
+              class="transition-all duration-[0.2s] absolute h-[1px] mt-1 w-5 bg-dark-gray diagonal part-2"
+            ></div>
+          </label>
+
+          <div
+            id="sidebar-menu"
+            class="p-5 flex flex-col justify-between h-[100vh] fixed bg-white z-50 md:hidden translate-x-[-320px] md:translate-x-0 transform duration-700 ease-in-out w-[320px] left-0 top-0 transition-all overflow-auto"
+          >
+            <div class="w-full h-[60%]">
+              <div class="font-medium flex justify-between gap-2 text-base">
+                3legant.
+              </div>
+              <form
+                class="border border-gray flex items-center rounded-md w-full px-2 py-1 mt-3"
+              >
+                <img
+                  src="../images/search 02.svg"
+                  class="w-5 h-5"
+                  alt=""
+                /><input
+                  type="text"
+                  placeholder="Search"
+                  class="border-0 !focus:outline-none bg-transparent w-full p-0"
+                />
+              </form>
+              <nav>
+                <ul
+                  class="flex flex-col divide-y divide-[#E8ECEF] [&>*]:py-3 list-none font-medium text-sm text-dark-gray"
+                >
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/pages/shop.html">Shop</a></li>
+                  <li><a href="/pages/product.html">Products</a></li>
+                  <li><a href="/pages//contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div
+              class="divide-y divide-[#E8ECEF] [&>*]:py-3 h-[40%] justify-self-end"
+            >
+              <div class="flex text-base text-gray justify-between">
+                Cart
+                <img src="../images/shopping bag.svg" class="w-5 h-5" alt="" />
+              </div>
+              <div class="flex text-base text-gray justify-between">
+                Whishlist
+                <img class="w-5 h-5" src="../images/heart.png" alt="" />
+              </div>
+              <button
+                class="bg-dark-gray rounded-md self-end text-white text-base font-medium w-full py-2"
+              >
+                Add to cart
+              </button>
+              <ul class="flex gap-6 items-center mt-5">
+                <li>
+                  <img src="../images/instagram-b.png" class="w-5 h-5" alt="" />
+                </li>
+                <li>
+                  <img src="../images/facebook-b.png" class="w-5 h-5" alt="" />
+                </li>
+                <li>
+                  <img src="../images/youtube-b.png" class="w-5 h-5" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="font-bold flex gap-2 text-base md:text-2xl">3legant.</div>
+        </div>
+
+        <!-- desctop menu -->
+        <nav>
+          <ul
+            class="hidden md:flex gap-8 justify-evenly list-none font-light text-sm text-gray active:text-dark-gray"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/shop.html">Shop</a></li>
+            <li><a href="/pages/product.html">Products</a></li>
+            <li><a href="/pages//contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <ul class="flex justify-evenly gap-4 list-none">
+          <li>
+            <img src="../images/search.svg" class="w-5 h-5" alt="" />
+          </li>
+          <li>
+            <img src="../images/user-circle.svg" class="w-5 h-5" alt="" />
+          </li>
+          <li>
+            <img src="../images/shopping-bag.svg" class="w-5 h-5" alt="" />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="md:max-w-[1120px] mx-auto grid grid-cols-4 mb-20 px-8 md:px-0">
+      <h2
+        class="font-display text-[40px] md:text-[54px] font-medium w-full text-center col-span-4 mb-10 md:mb-20 mt-10"
+      >
+        My Account
+      </h2>
+      <aside
+        class="col-span-4 md:col-span-1 flex md:w-[262px] flex-col bg-sky px-4 py-10 rounded-md gap-10 h-fit mb-10 md:mb-0"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <img
+            src="../images/userp.png"
+            alt="user profile picture"
+            class="rounded-full"
+          />
+          <h6 class="text-xl font-semibold text-dark-gray">Sofia Havertz</h6>
+        </div>
+        <ul class="w-full hidden md:block">
+          <li
+            class="font-medium text-base py-3 text-dark-gray border-b-2 border-dark-gray"
+          >
+            Account
+          </li>
+          <li class="font-medium text-base py-3 text-gray">Address</li>
+          <li class="font-medium text-base py-3 text-gray">Orders</li>
+          <li class="font-medium text-base py-3 text-gray">Wishlist</li>
+          <li class="font-medium text-base py-3 text-gray">Log Out</li>
+        </ul>
+        <div class="md:hidden">
+          <select
+            name="Account"
+            id="Account"
+            class="text-base font-medium border border-dark-gray rounded-md py-2 px-4 w-full md:w-52"
+          >
+            <option value="Living Room" class="text-sm">Account</option>
+            <option value="Living Room" class="text-sm">Address</option>
+            <option value="Kitchen" class="text-sm">Orders</option>
+            <option value="Bedroom" class="text-sm">Wishlist</option>
+            <option value="Bathroom" class="text-sm">Log Out</option>
+          </select>
+        </div>
+      </aside>
+      <section
+        class="md:col-span-3 col-span-4 md:ml-16 gap-6 place-content-start place-items-start"
+      >
+        <h5 class="font-semibold text-xl col-span-2 mb-10">Orders History</h5>
+
+        <div class="table-auto text-sm divide-y w-full">
+          <div>
+            <ul
+              class="text-gray flex gap-10 w-full [&>*]:w-36 max-sm:[&>*]:pr-10 [&>*]:text-nowrap max-sm:overflow-x-scroll pb-3"
+            >
+              <li class="font-normal text-start">Number ID</li>
+              <li class="font-normal text-start">Dates</li>
+              <li class="font-normal text-start">Status</li>
+              <li class="font-normal text-start">Price</li>
+            </ul>
+          </div>
+          <div class="divide-y">
+            <ul
+              class="flex gap-10 w-full [&>*]:w-36 [&>*]:text-nowrap [&>*]:py-6 max-sm:overflow-x-scroll"
+            >
+              <li>#3456_768</li>
+              <li>October 17, 2023</li>
+              <li>Delivered</li>
+              <li>$1234.00</li>
+            </ul>
+            <ul
+              class="flex gap-10 w-full [&>*]:w-36 [&>*]:text-nowrap [&>*]:py-6 max-sm:overflow-x-scroll"
+            >
+              <li>#3456_980</li>
+              <li>October 11, 2023</li>
+              <li>Delivered</li>
+              <li>$345.00</li>
+            </ul>
+            <ul
+              class="flex gap-10 w-full [&>*]:w-36 [&>*]:text-nowrap [&>*]:py-6 max-sm:overflow-x-scroll"
+            >
+              <li>#3456_120</li>
+              <li>August 24, 2023</li>
+              <li>Delivered</li>
+              <li>$134.00</li>
+            </ul>
+            <ul
+              class="flex gap-10 w-full [&>*]:w-36 [&>*]:text-nowrap [&>*]:py-6 max-sm:overflow-x-scroll"
+            >
+              <li>#3456_030</li>
+              <li>August 12, 2023</li>
+              <li>Delivered</li>
+              <li>$1534.00</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="bg-dark-gray text-white p-8 lg:p-4 mt-0 h-auto lg:h-[250px] flex flex-col items-center justify-center gap-6"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between w-full mx-auto py-4 max-w-[1120px]"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div
+              class="font-bold text-2xl border-b md:border-r md:border-b-0 border-gray pb-4 md:pb-0 md:pr-10"
+            >
+              3legant <span class="text-gray">.</span>
+            </div>
+            <p class="text-sm text-ivory">Gift &amp; Decoration Store</p>
+          </div>
+
+          <nav>
+            <ul
+              class="flex flex-col md:flex-row gap-8 justify-evenly text-center list-none font-light text-sm text-ivory pt-12 md:pt-0"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="/pages/shop.html">Shop</a></li>
+              <li><a href="/pages/product.html">Products</a></li>
+              <li><a href="/pages/blog.html">blog</a></li>
+              <li><a href="/pages/contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="flex flex-col md:flex-row gap-8 md:gap-0 justify-between w-full max-w-[1120px] border-t border-gray py-5"
+        >
+          <div
+            class="font-display text-xs flex flex-wrap md:flex-nowrap gap-6 order-2 md:order-1 justify-center"
+          >
+            <p class="font-extralight order-last md:order-first">
+              Copyright &copy; 2023 3legant. All rights reserved
+            </p>
+            <a class="font-semibold order-1 md:order-2" href="#"
+              >Privacy Policy</a
+            >
+            <a class="font-semibold order-2 md:order-last" href="#"
+              >Terms of Use</a
+            >
+          </div>
+          <ul
+            class="flex gap-6 order-1 md:order-last justify-center items-center"
+          >
+            <li>
+              <img src="../images/instagram.png" class="w-5 h-5" alt="" />
+            </li>
+            <li>
+              <img src="../images/facebook.png" class="w-5 h-5" alt="" />
+            </li>
+            <li>
+              <img src="../images/youtube.png" class="w-5 h-5" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
