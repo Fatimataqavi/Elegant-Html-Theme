@@ -1,1 +1,1 @@
-# Elegant-Html-Theme
+The design for this project was inspired by the creative work of Jen Kate on Figma. You can explore more of their amazing designs and ideas on their Figma profile. Here is the link: https://www.figma.com/@jenkate
